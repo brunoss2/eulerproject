@@ -1,0 +1,11 @@
+a=1
+k=600851475143
+while k != 1:
+     a += 1
+     while k%a == 0:
+         print (a)
+         k = k/a
+         print(k)
+
+print (a)
+
