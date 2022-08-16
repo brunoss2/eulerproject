@@ -1,0 +1,31 @@
+a = 999
+b = 999
+c = 0
+d = 1
+pri= 0
+segundo = 0
+while b > 0 and a > 0:
+    pri = a * (b - 1)
+    segundo = b*(a-1)
+    if pri < segundo:
+        a += -1
+    else:
+        b += -1
+    c = (a * b)
+
+    testo = str(c)
+    k = False
+    for i in range(len(testo)):
+        d = testo[i]
+        e = testo[-(i+1)]
+        if d != e:
+            k=True
+
+    if k==False:
+        print(testo)
+        break
+
+
+
+
+
